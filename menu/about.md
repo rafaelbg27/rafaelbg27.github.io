@@ -13,6 +13,6 @@ I'm passionate about inovation, technology and data science.
 
 I love the power and range that data science can have in almost every field and the way its used to improve results and make people's lifes better.
 
-If you'd like, you can download my (hopefully) updated resume here.
+If you'd like, you can download my (hopefully) updated resume [here][https://github.com/rafaelbg27/rafaelbg27.github.io/tree/gh-pages/assets/resume.pdf].
 
 Let's share knowledge and findings ;)
