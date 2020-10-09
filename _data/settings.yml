@@ -1,6 +1,6 @@
 # Change 'comments' to true for Disqus comments
 disqus:
-  comments: false
+  comments: true
   disqus_shortname: 'Rafa'
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
@@ -16,8 +16,8 @@ social:
 - {icon: 'github', link: 'https://www.github.com/rafaelbg27'}
 - {icon: 'twitter', link: 'https://twitter.com/rafaelbg27'}
 - {icon: 'linkedin', link: 'http://www.linkedin.com/in/rafaelbg27/'}
-- {icon: 'envelope', link: 'mailto:rafaelbg270@gmail.com'}
 - {icon: 'medium', link: 'https://medium.com/@rafaelbg27'}
+- {icon: 'envelope', link: 'mailto:rafaelbg270@gmail.com'}
 # - {icon: 'rss-square', link: '/rss-feed.xml'}
 
 # Customize site text
