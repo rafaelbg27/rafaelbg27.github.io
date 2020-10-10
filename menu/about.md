@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About me!
+permalink: /about/
 ---
 
 <!--- (<img align="center" src="https://github.com/rafaelbg27/rafaelbg27.github.io/tree/gh-pages/assets/img/profile-pic.jpg" width="150"> -->

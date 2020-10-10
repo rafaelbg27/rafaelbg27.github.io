@@ -1,10 +1,7 @@
 ---
 layout: page
 title: Contact
+permalink: /contact/
 ---
 
-Use the form below to drop me an email! I'll be happy to respond ;)
-
-{% include form.html %}
-
-{% include modal.html %}
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/rafaelbg27/) or [email me] ('mailto:rafaelbg270@gmail.com') ;)

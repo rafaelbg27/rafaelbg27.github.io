@@ -4,9 +4,9 @@ Gem::Specification.new do |spec|
   spec.name          = "Rafa's blog"
   spec.version       = "3.0.7"
   spec.authors       = ["Rafael Bernardes Gonçalves"]
-  spec.email         = ["l.nguyen.paul@gmail.com"]
+  spec.email         = ["rafaelbg270@gmail.com"]
 
-  spec.summary       = "Personal Webiste"
+  spec.summary       = "Data science experiments and personal thoughts"
   spec.homepage      = "https://github.com/rafaelbg27/rafaelbg27.github.io"
   spec.license       = "MIT"
 
