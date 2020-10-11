@@ -3,7 +3,7 @@ layout: page
 title: About me!
 ---
 
-![profile]({{ "assets/img/profile-pic.jpg" | absolute_url }})
+<img src="assets/img/profile-pic.jpg" width=200px>
 
 Hi! My name is **Rafael Bernardes Gonçalves**, and I'm a student from Brazil.
 
