@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About me!
+title: About me
 ---
 
-![]("assets/img/profile-pic.jpg"=250x)
+![]("assets/img/profile-pic.jpg")
 
 Hi! My name is **Rafael Bernardes Gonçalves**, and I'm a student from Brazil.
 
