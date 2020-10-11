@@ -3,7 +3,7 @@ layout: page
 title: About me
 ---
 
-![]("assets/img/profile-pic.jpg")
+![]("https://github.com/rafaelbg27/rafaelbg27.github.io/blob/gh-pages/assets/img/profile-pic.jpg"=250x)
 
 Hi! My name is **Rafael Bernardes Gonçalves**, and I'm a student from Brazil.
 
