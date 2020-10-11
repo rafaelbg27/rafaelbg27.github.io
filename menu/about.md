@@ -3,9 +3,9 @@ layout: page
 title: About me!
 ---
 
-<!--- (<img align="center" src="https://github.com/rafaelbg27/rafaelbg27.github.io/tree/gh-pages/assets/img/profile-pic.jpg" width="50"> -->
+<img align="center" src="https://github.com/rafaelbg27/rafaelbg27.github.io/tree/gh-pages/assets/img/profile-pic.jpg" width="50">
 
-![profile]({{ "assets/img/profile-pic.jpg" | absolute_url }})
+<!-- ![profile]({{ "assets/img/profile-pic.jpg" | absolute_url }}) -->
 
 Hi! My name is **Rafael Bernardes Gonçalves**, and I'm a student from Brazil.
 
