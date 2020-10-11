@@ -101,8 +101,7 @@ plt.legend([])
 ax3.set_ylabel('Writing Score', fontsize=12)
 ax3.set_xlabel('Gender', fontsize=14)
 ```
-
-<img src="https://github.com/rafaelbg27/rafaelbg27.github.io/blob/gh-pages/assets/img/students_performance/gender.PNG" alt="scores versus gender" width="150"/>
+![profile]({{ "assets/img/students_performance/gender.PNG" | absolute_url }})
 
 All charts will follow the same pattern, this is why I've decided to post just one snippet of code, so all you need to do in ordem to replicate it is changing the name. Just to clear things out: for each bar plot, the further to the right, the higher the students grade.
 
@@ -110,18 +109,7 @@ So, concerning the gender we have some small variations, showing that boys do a 
 
 In conclusion, nothing vary surprising or conclusive, this may be because of the small size of the dataset - around 1000 students.
 
-<img src="https://github.com/rafaelbg27/rafaelbg27.github.io/blob/gh-pages/assets/img/students_performance/test_preparation.PNG" alt="scores versus test preparation" width="150"/>
-
-
-
-<img src="https://github.com/rafaelbg27/rafaelbg27.github.io/blob/gh-pages/assets/img/students_performance/lunch.PNG" alt="scores versus lunch" width="150"/>
-
-
-
-<img src="https://github.com/rafaelbg27/rafaelbg27.github.io/blob/gh-pages/assets/img/students_performance/ethnicity.PNG" alt="scores versus ethnicity" width="150"/>
-
-
-
-<img src="https://github.com/rafaelbg27/rafaelbg27.github.io/blob/gh-pages/assets/img/students_performance/parental_education.PNG" alt="scores versus parental education" width="150"/>
-
-# Meritocracy Trap
+![profile]({{ "assets/img/students_performance/test_preparation.PNG" | absolute_url }})
+![profile]({{ "assets/img/students_performance/lunch.PNG" | absolute_url }})
+![profile]({{ "assets/img/students_performance/ethnicity.PNG" | absolute_url }})
+![profile]({{ "assets/img/students_performance/parental_education.PNG" | absolute_url }})
