@@ -1,8 +1,7 @@
 # Change 'comments' to true for Disqus comments
 disqus:
   comments: true
-  disqus_shortname: 'https://rafaelbg27.github.io'
-  # language: 'us'
+  disqus_shortname: 'Rafael Bernardes Gonçalves'
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-ID: 'UA-179701210-1'
