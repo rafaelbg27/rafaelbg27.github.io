@@ -111,8 +111,8 @@ axs[1].hist(X["total_charges"], color='orange')
 axs[1].set_xlabel('Total Charges', fontsize=14)
 plt.show()
 ```
-<img src='/assets/churn-retention/tenure.png'>
-<img src='/assets/churn-retention/charges.png'>
+<img src='/assets/img/churn-retention/tenure.png'>
+<img src='/assets/img/churn-retention/charges.png'>
 
 Although our dataset is considered small for Data Science purposes, we have a lot of variables that, empirically, shouldn't influence on the churn rate we are interesting, like "gender" and a few others.
 
@@ -143,8 +143,8 @@ plt.figure(figsize=(8,6))
 feat_importances.nlargest(10).plot(kind='barh', color='green')
 plt.show()
 ```
-<img src='/assets/churn-retention/linear_corr.png'>
-<img src='/assets/churn-retention/tree_corr.png'>
+<img src='/assets/img/churn-retention/linear_corr.png'>
+<img src='/assets/img/churn-retention/tree_corr.png'>
 
 So, analysing the feature relevances, we can conclude that the best to use on the model are "tenure", "contract", "payment_method", "monthly_charges" and "total_charges". As we've stated before, "tenure" should somehow be related to the charges, so we are going to create a new feature, dividing the "total_charges" by the "monthly_charges" to further explore it.
 
@@ -225,7 +225,7 @@ print('ADA Accuracy: %.3f (%.3f)' % (np.mean(adaboost_scores), np.std(adaboost_s
 print('KNN Accuracy: %.3f (%.3f)' % (np.mean(knn_scores), np.std(knn_scores)))
 ```
 
-<img src='/assets/churn-retention/model_comparison.png' width=400px>
+<img src='/assets/img/churn-retention/model_comparison.png' width=400px>
 
 In terms of accuracy, we have AdaBoost and Random Forest better performing. Because they use the same "decision tree" base, I'll choose KNN and AdaBoost as the main models to be tuned and compared for the task.
 
@@ -376,11 +376,11 @@ fig.tight_layout()
 plt.show()
 ```
 
-<img src='/assets/churn-retention/knn_results.png'>
+<img src='/assets/img/churn-retention/knn_results.png'>
 
 And for AdaBoost we have:
 
-<img src='/assets/churn-retention/adaboost_results.png'>
+<img src='/assets/img/churn-retention/adaboost_results.png'>
 
 So, clearly, AdaBoost is way more sensible to the threshold changes, and looks like the ideal model for the task, as we mantain a good accuracy overall while achieving a good score of the clients that are going to churn.
 
@@ -409,7 +409,7 @@ plt.ylabel("True", fontsize=14)
 plt.show()
 ```
 
-<img src='/assets/churn-retention/confusion_2.png'>
+<img src='/assets/img/churn-retention/confusion_2.png'>
 
 The confusion matrix is still not pretty but it makes much more sense to the project. Of the 280 positive churns, the algorithm got 230 correctly!
 
