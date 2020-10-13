@@ -2,7 +2,7 @@
 layout: post
 title: "Student performances in exams: a discussion on the meritocracy trap"
 author: "Rafael Bernardes Gonçalves"
-categories: ""
+categories: "insight"
 tags: [data science, machine learning, students, meritocracy]
 image: meritocracy.jpg
 ---
@@ -110,19 +110,19 @@ So, concerning the **gender** we have some small variations, showing that boys d
 
 In conclusion, nothing very surprising or conclusive, this may be because of the small size of the dataset - around 1000 students.
 
-![profile]({{ "assets/img/students_performance/gender.PNG" | absolute_url }})
+![profile]({{ "assets/img/students-performance/gender.PNG" | absolute_url }})
 
 The **test preparation** feature is the more intuitive one, so our only direct conclusion is that students that have completed the test praparation have higher grades.
 
-![profile]({{ "assets/img/students_performance/test_preparation.PNG" | absolute_url }})
+![profile]({{ "assets/img/students-performance/test_preparation.PNG" | absolute_url }})
 
 The **lunch** is probably directly correlated with the financial situation of the student. Here, we can see a huge performance difference between the two groups, but another possible interpretation is just that eatting well during the test may improve your score.
 
-![profile]({{ "assets/img/students_performance/lunch.PNG" | absolute_url }})
+![profile]({{ "assets/img/students-performance/lunch.PNG" | absolute_url }})
 
 I tried looking for what definition of race/ethnicity is being used on the dataset, but couldn't find it. So it was very tempting to simply drop this column, but instead I plotted the same bar chart just to see how your race can interfere in your results, but it's a little too random and confusing.
 
-![profile]({{ "assets/img/students_performance/ethnicity.PNG" | absolute_url }})
+![profile]({{ "assets/img/students-performance/ethnicity.PNG" | absolute_url }})
 
 This the most important feature for insights and discussion. The **parental level of education** is divided into:
 
@@ -135,7 +135,7 @@ This the most important feature for insights and discussion. The **parental leve
 
 This is the plot that shows the disparity of grades distribuition very well, note how the *master's degree* have scores way above average, along with the *bachelor's degree* group.
 
-![profile]({{ "assets/img/students_performance/parental_education.PNG" | absolute_url }})
+![profile]({{ "assets/img/students-performance/parental_education.PNG" | absolute_url }})
 
 # Feature relevance and correlation
 
@@ -178,7 +178,7 @@ df = df.dropna()
 display(df)
 ```
 
-Anlisys
+As we can see, there is a likely outlier
 
 ```python
 # Feature correlations
@@ -197,4 +197,4 @@ fig = plt.figure(figsize=(14,10))
 sns.heatmap(corrMatrix, annot=True)
 plt.show()
 ```
-![profile]({{ "assets/img/students_performance/corr_matrix.PNG" | absolute_url }})
+![profile]({{ "assets/img/students-performance/corr_matrix.PNG" | absolute_url }})

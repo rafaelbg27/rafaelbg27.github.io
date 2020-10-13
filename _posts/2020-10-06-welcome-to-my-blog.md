@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to my Blog!"
 author: "Rafael Bernardes Gonçalves"
 categories: "general"
-tags: [about, rafael]
+tags: [about, data science]
 image: background.jpg
 ---
 
