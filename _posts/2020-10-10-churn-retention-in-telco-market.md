@@ -112,6 +112,7 @@ axs[1].set_xlabel('Total Charges', fontsize=14)
 plt.show()
 ```
 <img src='/assets/img/churn-retention/tenure.png'>
+
 <img src='/assets/img/churn-retention/charges.png'>
 
 Although our dataset is considered small for Data Science purposes, we have a lot of variables that, empirically, shouldn't influence on the churn rate we are interesting, like "gender" and a few others.
