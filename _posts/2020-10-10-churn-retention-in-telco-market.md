@@ -226,7 +226,7 @@ print('ADA Accuracy: %.3f (%.3f)' % (np.mean(adaboost_scores), np.std(adaboost_s
 print('KNN Accuracy: %.3f (%.3f)' % (np.mean(knn_scores), np.std(knn_scores)))
 ```
 
-<img src='/assets/img/churn-retention/model_comparison.PNG' width=400px>
+<img src='/assets/img/churn-retention/model_comparison.PNG' width=300px>
 
 In terms of accuracy, we have AdaBoost and Random Forest better performing. Because they use the same "decision tree" base, I'll choose KNN and AdaBoost as the main models to be tuned and compared for the task.
 
