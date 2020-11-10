@@ -7,18 +7,18 @@ tags: [data science, machine learning, students, meritocracy]
 image: meritocracy.jpg
 ---
 
-One of the biggest discussions nowadays is about meritocracy and how your own effort leads you to sucess. On the other hand, this raises a deeper and harder discussion on where we start on the journey of life. It's really hard to think that someone born in a favela will have the same opportunities as the son of a successful salesman that doesn't have to worry with getting a job and helping his family paying the bills.
+One of the biggest discussions nowadays is about meritocracy and how your own effort leads you to success. On the other hand, this raises a deeper and harder discussion on where we start on the journey of life. It's really hard to think that someone born in a favela will have the same opportunities as the son of a successful salesman that doesn't have to worry with getting a job and helping his family paying the bills.
 
 # Dataset
 
-Bear in mind that this is a small dataset, so we will only do some data exploration and feature engineering. My original idea was to use a classification algorithm and train it to predict the student characteristics based on the grades, to show have a wider discussion on machile learning "hidden biases".
+Bear in mind that this is a small dataset, so we will only do some data exploration and feature engineering. My original idea was to use a classification algorithm and train it to predict the student characteristics based on the grades, to show have a wider discussion on machine learning "hidden biases".
 
 This data set consists of test results and background information about thousands of students, including:
 
 * Gender;
 * Race/ethnicity;
 * Parental level of education;
-* Lunch: if the student chose free/reduced luch or the regular to take during the test;
+* Lunch: if the student chose free/reduced lunch or the regular to take during the test;
 * Test preparation;
 
 It was acquired from [kaggle](https://www.kaggle.com/spscientist/students-performance-in-exams)
@@ -70,7 +70,7 @@ for column in ["math_score", "reading_score", "writing_score"]:
 display(db.head())
 ```
 
-Now, we will make a bar chart for each variable, as a very basid data exploring, but we can take several conclusions from each one of them.
+Now, we will make a bar chart for each variable, as a very basic data exploring, but we can take several conclusions from each one of them.
 
 ```python
 # Creating the figure
@@ -104,19 +104,19 @@ ax3.set_ylabel('Writing Score', fontsize=12)
 ax3.set_xlabel('Gender', fontsize=14)
 ```
 
-All charts will follow the same pattern, this is why I've decided to post just one snippet of code, so all you need to do in ordem to replicate it is changing the name. Just to clear things out: for each bar plot, the further to the right, the higher the students grade.
+All charts will follow the same pattern, this is why I've decided to post just one snippet of code, so all you need to do in order to replicate it is changing the name. Just to clear things out: for each bar plot, the further to the right, the higher the students grade.
 
-So, concerning the **gender** we have some small variations, showing that boys do a little better in math, but far worse in reading and writing. Take a while understading this graph, because it's simpler than the followings. The important thing to observe is the size of the middle bars in comparison with the 90-100 score ones.
+So, concerning the **gender** we have some small variations, showing that boys do a little better in math, but far worse in reading and writing. Take a while understanding this graph, because it's simpler than the followings. The important thing to observe is the size of the middle bars in comparison with the 90-100 score ones.
 
 In conclusion, nothing very surprising or conclusive, this may be because of the small size of the dataset - around 1000 students.
 
 ![profile]({{ "assets/img/students-performance/gender.PNG" | absolute_url }})
 
-The **test preparation** feature is the more intuitive one, so our only direct conclusion is that students that have completed the test praparation have higher grades.
+The **test preparation** feature is the more intuitive one, so our only direct conclusion is that students that have completed the test preparation have higher grades.
 
 ![profile]({{ "assets/img/students-performance/test_preparation.PNG" | absolute_url }})
 
-The **lunch** is probably directly correlated with the financial situation of the student. Here, we can see a huge performance difference between the two groups, but another possible interpretation is just that eatting well during the test may improve your score.
+The **lunch** is probably directly correlated with the financial situation of the student. Here, we can see a huge performance difference between the two groups, but another possible interpretation is just that eating well during the test may improve your score.
 
 ![profile]({{ "assets/img/students-performance/lunch.PNG" | absolute_url }})
 
@@ -133,7 +133,7 @@ This the most important feature for insights and discussion. The **parental leve
 - Bachelor's degree
 - Master's degree
 
-This is the plot that shows the disparity of grades distribuition very well, note how the *master's degree* have scores way above average, along with the *bachelor's degree* group.
+This is the plot that shows the disparity of grades distribution very well, note how the *master's degree* have scores way above average, along with the *bachelor's degree* group.
 
 ![profile]({{ "assets/img/students-performance/parental_education.PNG" | absolute_url }})
 
