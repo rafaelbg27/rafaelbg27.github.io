@@ -177,8 +177,11 @@ df = df.reset_index().drop("index", axis=1)
 df = df.dropna()
 display(df)
 ```
+![profile]({{ "assets/img/students-performance/list.PNG" | absolute_url }})
 
-As we can see, there is a likely outlier
+As we can see, looking at the top of the clusters we have only students with highly educated parents.
+
+Another way of seeing all the features together and how they relate to each other is with the correlation matrix:
 
 ```python
 # Feature correlations
@@ -198,3 +201,9 @@ sns.heatmap(corrMatrix, annot=True)
 plt.show()
 ```
 ![profile]({{ "assets/img/students-performance/corr_matrix.PNG" | absolute_url }})
+
+In conclusion, it's clear that the features related to parental education and money are deeply related to the student result on the exams. This is why meritocracy is so debatable when there is no isonomy between all people. A great video exemplifying this (in portuguese) can be watched in [this link](https://www.youtube.com/watch?v=YINTTVjBrY4&list=PLU6WL9E2gOnjwbt3oZCqdMdltsZTaKEXL&index=37).
+
+If you liked this "insight project" please let me know!
+
+Thanks for your time, bye!
