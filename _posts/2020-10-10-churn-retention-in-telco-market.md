@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Telco customer churn: dealing with unbalaced data"
+title: "Telco customer churn: dealing with unbalanced data"
 author: "Rafael Bernardes Gonçalves"
 categories: "machine learning"
 tags: [machine learning, telecom, churn]
