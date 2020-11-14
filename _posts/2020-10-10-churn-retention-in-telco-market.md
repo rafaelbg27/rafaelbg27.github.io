@@ -19,7 +19,7 @@ One of this companies hired you to predict if the if likely to churn or not and,
 
 # Initial Data Analysis
 
-First, let's import the libraries and the data. Notice that the column names are not in Python's default snake case. Let's rename them just to make it easier to work with the data. Also, we need to change the floating point from "comma" (brazilian default) to "dot".
+First, let's import the libraries and the data. Notice that the column names are not in Python's default snake case. Let's rename them just to make it easier to work with the data.
 
 I'm going to use the Data Science Project pipeline presented on "Hands–On Machine Learning with Scikit–Learn and TensorFlow" (2e), quite simple and useful. Check appendix for further info on this.
 

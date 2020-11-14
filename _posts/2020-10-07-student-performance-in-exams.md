@@ -70,7 +70,8 @@ for column in ["math_score", "reading_score", "writing_score"]:
 display(db.head())
 ```
 
-Now, we will make a bar chart for each variable, as a very basic data exploring, but we can take several conclusions from each one of them.
+W
+e will make a bar chart for each variable, as a very basic data exploring, but we can take several conclusions from each one of them.
 
 ```python
 # Creating the figure
