@@ -3,8 +3,8 @@ layout: post
 title: "Student performances in exams: plotting with seaborn and discussing meritocracy"
 author: "Rafael Bernardes Gonçalves"
 categories: "insight"
-tags: [data science, machine learning, students, meritocracy]
-image: /assets/img/students-performance/thumbnail.png
+tags: ["data science", "machine learning", "students", "meritocracy"]
+image: "/assets/img/students-performance/thumbnail.png"
 ---
 
 ## 0) Problem description and looking at the big picture
