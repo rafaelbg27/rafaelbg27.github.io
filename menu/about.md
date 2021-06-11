@@ -13,7 +13,7 @@ If you'd like, you can download my (hopefully) updated resume [here](https://git
 
 My social medias are on the icons floating somewhere on the website, but I'd like to share some random links:
 
-- [Gaming list](https://www.notion.so/Games-f0942f6263294bbf818c87b70411e431): the check icon means I've finished that game
+- [Gaming list](https://ggapp.io/rafaelbg27)
 - [Spotify Playlists](https://open.spotify.com/user/12175781034?si=-yvX-RQFRIGgrPUGLrwxSw)
 - [TV Shows watched](https://www.tvtime.com/en/user/4067657/account)
 
