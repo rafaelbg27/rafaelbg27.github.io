@@ -7,6 +7,8 @@ tags: [data science, machine learning, students, meritocracy]
 image: /students-performance/thumbnail.png
 ---
 
+Hi! Today we are going to explore plotting bar charts and practice how to gain insights of a dataset with the most beautiful plotting library in python: seaborn!
+
 ## 0) Problem description and looking at the big picture
 
 One of the biggest discussions nowadays is about meritocracy and how your own effort leads you to success. On the other hand, this raises a deeper and harder discussion on where we start on the journey of life. It's really hard to think that someone born in a favela will have the same opportunities as the son of a successful salesman that doesn't have to worry with getting a job and helping his family paying the bills.

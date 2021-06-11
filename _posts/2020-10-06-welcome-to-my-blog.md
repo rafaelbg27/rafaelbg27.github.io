@@ -4,7 +4,7 @@ title: "Welcome to my Blog!"
 author: "Rafael Bernardes Gonçalves"
 categories: "general"
 tags: [about, data science]
-image: background.jpg
+image: /welcome-post/thumbnail.jpg
 ---
 
 Hi! My name is **Rafael Bernardes Gonçalves**, and I'm creating this blog to share some data science projects and personal insights.

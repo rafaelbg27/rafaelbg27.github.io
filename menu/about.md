@@ -3,7 +3,7 @@ layout: page
 title: About me
 ---
 
-<img src="/assets/img/profile-pic.jpg" width=300px>
+<img src="/assets/img/general/profile-pic.jpg" width=300px>
 
 Hi! My name is **Rafael Bernardes Gonçalves**, and I'm a Electronic Engineering student from Brazil.
 

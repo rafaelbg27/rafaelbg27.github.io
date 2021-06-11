@@ -4,7 +4,7 @@ title: "Telco customer churn: dealing with unbalanced data"
 author: "Rafael Bernardes Gonçalves"
 categories: "machine learning"
 tags: [machine learning, telecom, churn]
-image: telecom-market.jpg
+image: /churn-retention/thumbnail.jpg
 ---
 
 This post is a direct approach to a Data Science project, so I'll introduce a context and then present the solution. Hope you enjoy my insights and feel free to contribute on the comments and share the post. ;)
@@ -62,6 +62,7 @@ db_raw.replace('No phone service', 'No', inplace=True)
 
 display(db_raw.head())
 ```
+
 Now, we need to clean our data, a small inspection of the sheet describing all the variables already tell us that only 3 attributes are numerical and not categorical: "tenure", "monthly_charges" and "total_charges".
 
 Due to that, we need to turn our categorical data into numerical, using an encoder (or manually, if you want to follow a certain order of labelling).
@@ -92,6 +93,7 @@ key = X.columns[1:]
 X = X.drop_duplicates(subset=key)
 X = X.dropna()
 ```
+
 Let's visualize the values of "tenure", "mothly_charges" and "total_charges" on histogram charts. It's logical to think that these 3 variables are somehow related, and this will be verified afterwards.
 
 ```python
@@ -111,6 +113,7 @@ axs[1].hist(X["total_charges"], color='orange')
 axs[1].set_xlabel('Total Charges', fontsize=14)
 plt.show()
 ```
+
 <img src='/assets/img/churn-retention/tenure.PNG'>
 
 <img src='/assets/img/churn-retention/charges.png'>
@@ -144,6 +147,7 @@ plt.figure(figsize=(8,6))
 feat_importances.nlargest(10).plot(kind='barh', color='green')
 plt.show()
 ```
+
 <img src='/assets/img/churn-retention/linear_corr.PNG'>
 <img src='/assets/img/churn-retention/tree_corr.PNG'>
 
@@ -188,6 +192,7 @@ plt.show()
 # Machine learning model development and evaluation
 
 This is a classification problem, we could use Logistic Regression, SVM, KNN, Decision Trees, Neural Networks, etc. I've chosen four models to do an initial analysis:
+
 - Logistic Regression: simple model that hardly overfits and provide trustworthy precision
 - Random Forest: suits well with almost every dataset, even if its huge
 - AdaBoost: uses random forest on the backlines with a gradient boost to improce performance
@@ -198,7 +203,7 @@ This is a classification problem, we could use Logistic Regression, SVM, KNN, De
 
 lgr_model = LogisticRegression()
 
-rf_model = rf_model = RandomForestClassifier(n_estimators=1600, 
+rf_model = rf_model = RandomForestClassifier(n_estimators=1600,
         min_samples_split=2, min_samples_leaf=4,
         max_features='sqrt', max_depth=10, bootstrap=True)
 
@@ -231,6 +236,7 @@ print('KNN Accuracy: %.3f (%.3f)' % (np.mean(knn_scores), np.std(knn_scores)))
 In terms of accuracy, we have AdaBoost and Random Forest better performing. Because they use the same "decision tree" base, I'll choose KNN and AdaBoost as the main models to be tuned and compared for the task.
 
 Now, we have to think (a lot) to answer a few questions:
+
 - Is this accuracy good?
 - Does it make sense for the telecom company to sell them this solution?
 
@@ -265,7 +271,7 @@ This is happening because the unbalanced dataset that I keep talking about and t
 
 The telecom is interested in the accuracy concerning the churns, they already know that approximately 75% of their clients don't cancell the contract!
 
-Interesting enough, *machine learning models can be biased on purpose*, if we receive the probabilities they predict instead of the final boolean value. This is called changing the model's threshold. Let's try it out.
+Interesting enough, _machine learning models can be biased on purpose_, if we receive the probabilities they predict instead of the final boolean value. This is called changing the model's threshold. Let's try it out.
 
 So, just to clear things out, the following code will train the models chosen multiple times with different biases so we have trustworthy results and compare them.
 
